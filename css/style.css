@@ -1,0 +1,299 @@
+:root {
+	--line1-color: #ed7d31;
+	--line2-color: #ffc000;
+	--line3-color: #fff34d;
+	--title-color: #f6ff93;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: sans-serif,Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	line-height: 1.4;
+	color:#000;
+	background: #ddd;
+}
+
+@media (width <= 700px) {
+body {
+	font-size: 15px;
+}
+}
+
+.po-container{
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 15px 30px 10px 50px;
+	background:#fff;
+	border-left: 18px solid var(--line1-color);
+	box-shadow: inset 12px 0 0 0 var(--line2-color);
+}
+
+.po-top{
+	display: flex;
+}
+
+.po-top-img{
+	width:150px;
+	margin:15px;
+}
+
+.po-top-img img{
+	width:100%;
+}
+
+.po-top-name{
+	margin:50px 0 0 20px;
+}
+
+.po-top-en{
+	font-size: 16px;
+	color: #999;
+	line-height: 0.5;
+}
+
+.po-top-ja{
+	font-size: 42px;
+	font-weight: 700;
+	border-bottom: 5px solid var(--line1-color);
+}
+
+@media (width <= 840px) {
+.po-container{
+	padding: 15px 3dvw 10px 5dvw;
+	border-left: 13px solid var(--line1-color);
+	box-shadow: inset 7px 0 0 0 var(--line2-color);
+}
+
+.po-top-img{
+	width:20%;
+	margin:1dvw;
+}
+
+.po-top-name{
+	margin:5dvw 0 0 2dvw;
+}
+
+.po-top-en{
+	font-size: 14px;
+	line-height: 0.6;
+}
+
+.po-top-ja{
+	font-size: 5.2dvw;
+	border-bottom: 4px solid var(--line1-color);
+}
+
+}
+
+@media (width <= 440px) {
+.po-container{
+	padding: 10px 10px 5px 20px;
+	border-left: 6px solid var(--line1-color);
+	box-shadow: inset 3px 0 0 0 var(--line2-color);
+}
+
+.po-top-ja{
+	font-size: 5.1dvw;
+	border-bottom: 2px solid var(--line1-color);
+}
+
+.po-top-en{
+	font-size: 11px;
+	line-height: 0.7;
+}
+
+}
+
+
+.po-h2 {
+  display: flex;
+  align-items: center;
+  
+  font-size: 1.5em;       /* 文字サイズ (約24px) */
+  font-weight: 700;        /* 太字 */
+  line-height: 1.2;
+
+  padding-left: 8px;
+  border-left: 8px solid var(--line2-color);
+  margin:120px 0 20px 0;
+}
+
+.po-h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  margin: 0 0 1.5em;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #666;
+}
+
+.po-h3::before {
+  content: "";
+  width: 20px;
+  aspect-ratio: 1;
+  background: var(--line3-color);
+  clip-path: polygon(0% 0%, 60% 0, 100% 50%, 60% 100%, 0% 100%);
+  flex-shrink: 0;
+}
+
+@media (width <= 700px) {
+.po-h2 {  
+  font-size: 1.4em;       /* 文字サイズ (約24px) */       /* 太字 */
+  line-height: 1.2;
+  padding-left: 8px;
+  margin:60px 0 20px 0;
+}
+
+.po-h3 {
+  gap: 3px;
+  margin: 0 0 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.po-h3::before {
+  width: 15px;
+}
+
+}
+
+.po-skill{
+	display: flex;
+	margin-bottom: 0;
+}
+
+.po-skill-main{
+	width:180px;
+}
+.po-skill-list{
+	width:350px;
+	margin-left: 0;
+}
+
+.po-skill-icon{
+	display: flex;
+	margin-left: 0;
+}
+
+.po-skill-icon img{
+	width: 24px;
+	margin:3px;
+}
+
+@media (width <= 700px) {
+.po-skill-main{
+	width:150px;
+}
+.po-skill-list{
+	width:300px;
+}
+
+}
+
+@media (width <= 620px) {
+.po-skill{
+	display: block;
+	margin-bottom: 15px;
+}
+
+.po-skill-main{
+	width:100%;
+}
+
+.po-skill-list{
+	width:100%;
+	margin-left: 10px;
+}
+
+.po-skill-icon{
+	display: flex;
+	margin-left: 15px;
+}
+
+.po-skill-icon img{
+	width: 20px;
+	margin:2px;
+}
+
+}
+
+.po-depo{
+	background: var(--line3-color);
+	font-weight: 500;
+	padding:6px;
+	border-radius: 4px;
+}
+
+.po-depo-txt{
+	margin:10px 0 40px 0;
+}
+
+
+.po-web{
+	display: flex;
+}
+
+.po-web-img,
+.po-web-txt{
+	width:49%;
+	margin:0 auto;
+}
+
+.po-web-img img{
+	width:100%;
+}
+
+.po-web-txt{
+	font-size: 0.8rem;
+	padding-left:5%;
+}
+
+.po-web-tit{
+	background: var(--title-color);
+	font-weight: 500;
+	padding:6px;
+	border-radius: 4px;
+}
+
+.po-web-icon{
+	display: flex;
+	margin-top:10px;
+}
+
+.po-web-icon img{
+	width: 24px;
+	margin:3px;
+}
+
+@media (width <= 520px) {
+
+.po-web{
+	display: block;
+}
+
+.po-web-img,
+.po-web-txt{
+	width:95%;
+	margin:0 auto;
+}
+
+.po-web-img{
+	margin-bottom: 15px;
+}
+
+.po-web-icon img{
+	width: 20px;
+	margin:2px;
+}
+}
