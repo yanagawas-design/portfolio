@@ -30,7 +30,7 @@ body {
 	width: 100%;
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 15px 30px 10px 50px;
+	padding: 15px 30px 0 50px;
 	background:#fff;
 	border-left: 18px solid var(--line1-color);
 	box-shadow: inset 12px 0 0 0 var(--line2-color);
@@ -67,7 +67,7 @@ body {
 
 @media (width <= 840px) {
 .po-container{
-	padding: 15px 3dvw 10px 5dvw;
+	padding: 15px 3dvw 0 5dvw;
 	border-left: 13px solid var(--line1-color);
 	box-shadow: inset 7px 0 0 0 var(--line2-color);
 }
@@ -95,7 +95,7 @@ body {
 
 @media (width <= 440px) {
 .po-container{
-	padding: 10px 10px 5px 20px;
+	padding: 10px 10px 0 20px;
 	border-left: 6px solid var(--line1-color);
 	box-shadow: inset 3px 0 0 0 var(--line2-color);
 }
@@ -242,6 +242,7 @@ body {
 
 .po-web{
 	display: flex;
+	margin-bottom: 60px;
 }
 
 .po-web-img,
@@ -256,7 +257,7 @@ body {
 
 .po-web-txt{
 	font-size: 0.8rem;
-	padding-left:5%;
+	padding:0 0 0 3%;
 }
 
 .po-web-tit{
@@ -264,6 +265,34 @@ body {
 	font-weight: 500;
 	padding:6px;
 	border-radius: 4px;
+}
+
+.po-web-txt a{
+	display:inline-block;
+	margin-top: 10px;
+	padding:5px 10px;
+	background:#fff;
+	color: #3c3b39;
+	border-radius: 5px;
+	border: solid 1px #3c3b39;
+	text-decoration: none;
+	/*transition: background-color 0.2s ease;*/
+}
+
+.po-web-txt a:hover{
+	background:#3c3b39;
+	color: #fff;
+	border: solid 1px #3c3b39;
+}
+
+.po-web-txt-aend{
+	display:inline-block;
+	margin-top: 10px;
+	padding:5px 10px;
+	background:#b1b1b1;
+	color: #3c3b39;
+	border-radius: 5px;
+	border: solid 1px #3c3b39;
 }
 
 .po-web-icon{
@@ -288,6 +317,10 @@ body {
 	margin:0 auto;
 }
 
+.po-web-txt{
+	padding:10px 0 0 0;
+}
+
 .po-web-img{
 	margin-bottom: 15px;
 }
@@ -296,4 +329,65 @@ body {
 	width: 20px;
 	margin:2px;
 }
+}
+
+
+.po-ill{
+	margin-bottom: 60px;
+}
+
+.po-ill-img,
+.po-ill-txt{
+	width:98%;
+	margin:0 auto;
+}
+
+.po-ill-img{
+	margin-bottom: 15px;
+}
+
+.po-ill-txt{
+	font-size: 0.8rem;
+}
+
+@media (width <= 520px) {
+.po-ill-img,
+.po-ill-txt{
+	width:95%;
+}
+}
+
+.po-h3-ot{
+	font-size: 0.8rem;
+	color: #b54703;
+	margin-top: -20px;
+	margin-bottom: 15px;
+}
+
+.po-ot{
+	margin-bottom: 30px;
+}
+
+.po-ot-tit{
+	background: var(--title-color);
+	font-weight: 500;
+	padding:6px;
+	border-radius: 4px;
+	margin-bottom:5px;
+}
+
+.po-ot-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.po-ot-list div{
+	white-space: nowrap;
+}
+
+footer{
+	font-size: 0.8rem;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 6px;
 }
