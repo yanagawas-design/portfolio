@@ -117,8 +117,8 @@ body {
   display: flex;
   align-items: center;
   
-  font-size: 1.5em;       /* 文字サイズ (約24px) */
-  font-weight: 700;        /* 太字 */
+  font-size: 1.5em;
+  font-weight: 700;
   line-height: 1.2;
 
   padding-left: 8px;
@@ -149,7 +149,7 @@ body {
 
 @media (width <= 700px) {
 .po-h2 {  
-  font-size: 1.4em;       /* 文字サイズ (約24px) */       /* 太字 */
+  font-size: 1.4em;
   line-height: 1.2;
   padding-left: 8px;
   margin:60px 0 20px 0;
@@ -174,7 +174,7 @@ body {
 }
 
 .po-skill-main{
-	width:180px;
+	width:185px;
 }
 .po-skill-list{
 	width:350px;
@@ -188,6 +188,7 @@ body {
 
 .po-skill-icon img{
 	width: 24px;
+	height: 24px;
 	margin:3px;
 }
 
@@ -223,6 +224,7 @@ body {
 
 .po-skill-icon img{
 	width: 20px;
+	height: 20px;
 	margin:2px;
 }
 
@@ -302,6 +304,7 @@ body {
 
 .po-web-icon img{
 	width: 24px;
+	height: 24px;
 	margin:3px;
 }
 
@@ -327,6 +330,7 @@ body {
 
 .po-web-icon img{
 	width: 20px;
+	height: 20px;
 	margin:2px;
 }
 }
