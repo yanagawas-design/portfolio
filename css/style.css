@@ -230,6 +230,16 @@ body {
 
 }
 
+.po-seka-txt{
+	margin:2px 0 15px 20px;
+}
+
+@media (width <= 700px) {
+.po-seka-txt{
+	margin:2px 0 12px 15px;
+}
+}
+
 .po-depo{
 	background: var(--line3-color);
 	font-weight: 500;
